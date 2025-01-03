@@ -1,0 +1,516 @@
+/* Styling for Movie Website (Desktop /Tablet view) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #121212;
+  line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6); 
+  position: fixed; /* fixed to the top while scrolling */
+  width: 100%; 
+  z-index: 1000; /* stays above other elements */
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+}
+
+/* Navigation Links */
+.navbar nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #fac424;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+}
+
+/* Sign-In Button */
+.sign-in-btn {
+  font-weight: 500;
+  background-color: #df9800;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px; 
+  background-image: url('Images/Blink\ Twice.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Hamburger Menu (Mobile view omly) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+/* Hero Content Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Left Column of the Hero Section */
+.hero-left {
+  max-width: 600px;
+  margin-left: 20px;
+  margin-top: -50px; 
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: 42px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Movie Info Section */
+.movie-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.movie-rating {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.movie-info i {
+  font-size: 10px;
+  margin: 0 10px;
+}
+
+.movie-duration,
+.movie-year {
+  margin-right: 10px;
+}
+
+.movie-genre {
+  font-size: 16px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+/* Movie Description */
+.movie-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Action Buttons (Play & Watch Trailer) */
+.action-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.play-btn {
+  padding: 12px 24px;
+  margin-right: 20px;
+  font-size: 16px;
+  background-color: #c79501;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play-btn:hover {
+  background-color: #ffbf00;
+}
+
+#play-icon {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  color: #ffc107;
+  font-size: 25px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.watch-trailer {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Latest Movies Section Styling */
+.latest-movies {
+  padding: 2rem;
+  background-color: #202020;
+}
+
+/* Section Header Styling */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #424242;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffc107;
+}
+
+.navigation {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-arrow {
+  color: #ffc107;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.nav-arrow:hover {
+  color: #ffffff;
+}
+
+/* Movie Grid Styling */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 2rem; 
+  padding: 2rem; 
+}
+
+.movie-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #282828; 
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+.movie-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-item img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); 
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: #202020;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.subscribe-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.subscribe-text h2 {
+  font-size: 1.8rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.subscribe-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.subscribe-form input {
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: none;
+  flex: 1;
+}
+
+.subscribe-form button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffc107;
+  color: #202020;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #e0a800;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%;
+  display: block; 
+}
+
+.image img {
+  width: 100%; 
+  height: auto; 
+}
+
+/* Footer Section */
+.footer {
+  background-color: #101010;
+  padding: 3rem 4rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  color: #ffc107;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-column p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ffc107;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(223, 219, 0, 0.2);
+  padding-top: 1rem;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+}
+
+/* Responsive Design for Mobile devices */
+@media screen and (max-width: 720px) {
+
+  /* Navbar Layout e */
+  .navbar {
+    padding: 2rem;
+  }
+
+  /* Logo */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Displaying hamburger menu */
+  .hamburger {
+    display: flex;
+    position: absolute;
+    left: 20px;
+  }
+
+  /* Hide the navigation links by default */
+  .navbar nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(15, 15, 15, 0.8); 
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .navbar nav.active {
+    display: flex;
+  }
+
+  /* Sign-in button */
+  .sign-in-btn {
+    position: absolute;
+    right: 20px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile view */
+  }
+
+  .movie-item img {
+    height: 100%; 
+    object-fit: contain; 
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .image {
+    display: none; /* Hides the image on mobile */
+  }
+
+  .subscribe-section {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start; 
+  }
+
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .subscribe-text {
+    max-width: 100%; 
+    margin-bottom: 2rem; 
+  }
+
+  .subscribe-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .subscribe-text p {
+    font-size: 0.9rem; 
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%; 
+  }
+}
