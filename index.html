@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FilmXplore: Online Free Movie</title>
+  
+  <!-- Google fonts link (Poppins font)  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- CSS Sylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome Icons Link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar Section with logo -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="Images/logo.png" alt="Filxplorer Logo">
+      </div>
+
+      <!-- Hamburger Menu (for mobile devices) -->
+      <div class="hamburger" onclick="toggleNavbar()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- Navigation Links  -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Genre</a>
+      </nav>
+
+      <!-- Search Bar Section -->
+      <div class="search-bar-container">
+        <button id="search-icon">
+          <i class="fa fa-search"></i>
+        </button>
+
+       <!-- Hidden search input field that appears when clicked --> 
+        <div id="search-bar" class="hidden">
+          <input type="text" id="search-input" placeholder="Search movies or TV shows..." />
+          <button id="search-button">Search</button>
+        </div>
+      </div>
+      <div id="search-results"></div>
+
+     <!-- Sign In Button --> 
+      <button class="sign-in-btn">Sign In</button>
+    </div> 
+  </header>
+
+      <!-- Movie List Section-->
+      <div id="movie-list" class="movie-list">
+        <!-- The movie items will be displayed here -->
+        </div>
+        
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-left">
+        <h1 class="hero-title">Blink Twice</h1>
+
+        <!-- Movie Info Section -->
+        <div class="movie-info">
+          <label class="movie-rating">R</label>
+          <i class="fas fa-circle"></i>
+          <span class="movie-duration">1hr 42mins</span>
+          <i class="fas fa-circle"></i>
+          <p class="movie-year">2024</p>
+          <i class="fas fa-circle"></i>
+          <span class="movie-genre">Mystery / Thriller</span>
+        </div>
+
+        <!-- Movie Description -->
+        <p class="movie-description">
+          When tech billionaire Slater King meets cocktail waitress Frida at his fundraising gala, he invites her to join him and his friends on a dream vacation on his private island. As strange things start to happen, Frida questions her reality.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button class="play-btn">PLAY NOW</button>
+          <i id="play-icon" class="fas fa-play"></i>
+          <p class="watch-trailer">WATCH TRAILER</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Movies Section -->
+  <section class="latest-movies">
+    <div class="section-header">
+      <h2 class="section-title">LATEST MOVIES</h2>
+      <div class="navigation">
+        <span class="nav-arrow">&lt;</span>
+        <span class="nav-arrow">&gt;</span>
+      </div>
+    </div>
+
+    <!-- Movies Grid -->
+    <div class="movies-grid">
+      <div class="movie-item"><img src="Images/Movie Img/A real pain.jpg" alt="Movie 1"></div>
+      <div class="movie-item"><img src="Images/Movie Img/Blitz.jpeg" alt="Movie 2"></div>
+      <div class="movie-item"><img src="Images/Movie Img/boneyard.jpeg" alt="Movie 3"></div>
+      <div class="movie-item"><img src="Images/Movie Img/Conclave.jpg" alt="Movie 4"></div>
+      <div class="movie-item"><img src="Images/Movie Img/dune.jpg" alt="Movie 5"></div>
+      <div class="movie-item"><img src="Images/Movie Img/Furiose.jpg" alt="Movie 6"></div>
+      <div class="movie-item"><img src="Images/Movie Img/Heartbreak Motel.jpg" alt="Movie 7"></div>
+      <div class="movie-item"><img src="Images/Movie Img/Wicked.jpg" alt="Movie 8"></div>
+      <div class="movie-item"><img src="Images/Movie Img/joker.jpg" alt="Movie 9"></div>
+      <div class="movie-item"><img src="Images/Movie Img/Outrun.jpg" alt="Movie 10"></div>
+    </div>
+  </section>
+
+  <!-- Popular TV Shows Section -->
+  <section class="latest-movies">
+    <div class="section-header">
+      <h2 class="section-title">POPULAR TV SHOWS</h2>
+      <div class="navigation">
+        <span class="nav-arrow">&lt;</span>
+        <span class="nav-arrow">&gt;</span>
+      </div>
+    </div>
+
+    <!-- TV Shows Grid -->
+    <div class="movies-grid">
+      <div class="movie-item"><img src="Images/TV_Shows Img/Adorazion.jpeg" alt="TV Show 1"></div>
+      <div class="movie-item"><img src="Images/TV_Shows Img/Citadel.jpg" alt="TV Show 2"></div>
+      <div class="movie-item"><img src="Images/TV_Shows Img/Echoes of the Past.jpg" alt="TV Show 3"></div>
+      <div class="movie-item"><img src="Images/TV_Shows Img/Cruel.jpg" alt="TV Show 4"></div>
+      <div class="movie-item"><img src="Images/TV_Shows Img/Girl.jpeg" alt="TV Show 5"></div>
+      <div class="movie-item"><img src="Images/TV_Shows Img/Secret Level.jpg" alt="TV Show 6"></div>
+      <div class="movie-item"><img src="Images/TV_Shows Img/The Sticky.jpg" alt="TV Show 7"></div>
+      <div class="movie-item"><img src="Images/TV_Shows Img/The Story of Pearl Girl.jpg" alt="TV Show 8"></div>
+      <div class="movie-item"><img src="Images/TV_Shows Img/Tracker.jpg" alt="TV Show 9"></div>
+      <div class="movie-item"><img src="Images/TV_Shows Img/Under the bridge.jpg" alt="TV Show 10"></div>
+    </div>
+  </section>
+
+<!-- Subscribe Section -->
+<section class="subscribe-section">
+  <div class="subscribe-container">
+    <!-- Text and Form for Subscription -->
+    <div class="subscribe-text">
+      <h2>Subscribe for the Latest Hits</h2>
+      <p>Don’t miss out on the latest movies, trending TV shows, and exclusive updates. Subscribe to our newsletter and get the buzz delivered straight to your inbox!</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Subscription Image -->
+    <div class="image">
+      <img src="Images/Movies.jpg" alt="People watching TV">
+    </div>
+  </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About Us-->
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>At FilmXplore, we are dedicated to bringing you the finest in entertainment. From the latest blockbusters and critically acclaimed TV shows to timeless classics across all genres, all in one place. Discover entertainment, redefined!</p>
+      </div>
+
+      <!-- Support-->
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Follow Us-->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <p>Stay connected for the latest updates and exclusive content!</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2025 FilmXplore. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!--Link to JS file-->
+  <script src="script.js"></script>
+</body>
+
+</html>
