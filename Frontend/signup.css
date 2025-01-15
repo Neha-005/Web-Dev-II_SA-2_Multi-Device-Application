@@ -189,7 +189,7 @@ body {
 }
 
 /* Sign-In Button Styling */
-.sign-in-btn {
+.sign-up-btn {
     font-weight: 500; 
     background-color: #df9800; 
     color: #fff; 
@@ -201,7 +201,7 @@ body {
 }
 
 /* Hover effect for the sign-in button */
-.sign-in-btn:hover {
+.sign-up-btn:hover {
     background-color: #e0a800; 
 }
   
